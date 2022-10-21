@@ -10,7 +10,7 @@ const handler = async (req ,res)=> {
 ) {
     const data = req.body;
     //connecting to DB
-    const  client = await MongoClient.connect('mongodb+srv://wass2guez:wassboxeur2guez@cluster0.iwazgwo.mongodb.net/nextjsdb?retryWrites=true&w=majority')
+    const  client = await MongoClient.connect(' mongodb+srv://wass2guez:<password>@cluster0.iwazgwo.mongodb.net/<collection_name>?retryWrites=true&w=majority')
     const db = client.db()
 
     const meetupsCollection = db.collection('nextjsdb')
