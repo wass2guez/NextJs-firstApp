@@ -31,7 +31,7 @@ const MeetupDetail = (props) => {
 // allows you to control which pages are generated during the build
 export const getStaticPaths = async () => {
   const client = await MongoClient.connect(
-    "mongodb+srv://wass2guez:wassboxeur2guez@cluster0.iwazgwo.mongodb.net/nextjsdb?retryWrites=true&w=majority"
+    "mongodb+srv://wass2guez:<password>@cluster0.iwazgwo.mongodb.net/<collection_name>?retryWrites=true&w=majority"
   );
   const db = client.db();
   const meetupCollection = db.collection("nextjsdb");
