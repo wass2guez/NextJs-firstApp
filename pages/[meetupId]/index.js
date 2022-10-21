@@ -54,7 +54,7 @@ export const getStaticProps = async (context) => {
   //[meetupId] could be accessed with context.params.
   const meetupId = context.params.meetupId;
   const client = await MongoClient.connect(
-    "mongodb+srv://wass2guez:wassboxeur2guez@cluster0.iwazgwo.mongodb.net/nextjsdb?retryWrites=true&w=majority"
+     "mongodb+srv://wass2guez:<password>@cluster0.iwazgwo.mongodb.net/<collection_name>?retryWrites=true&w=majority"
   );
   const db = client.db();
   const meetupCollection = db.collection("nextjsdb");
