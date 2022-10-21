@@ -29,7 +29,7 @@ export const getStaticProps = async () => {
   //fetch data from API
   //here the db connection and all credentials will not be exposed to clientside
   const client = await MongoClient.connect(
-    "mongodb+srv://wass2guez:wassboxeur2guez@cluster0.iwazgwo.mongodb.net/nextjsdb?retryWrites=true&w=majority"
+    "mongodb+srv://wass2guez:<password>@cluster0.iwazgwo.mongodb.net/<collection_name>?retryWrites=true&w=majority"
   );
   const db = client.db();
   const meetupCollection = db.collection("nextjsdb");
